@@ -9,6 +9,7 @@ import spotipy as sp
 def index():
     return render_template("index.html")
 
+#Route that will receive the url of the user.
 @app.route('/', methods=['POST'])
 def url_post():
     imageURL = request.form['text']
